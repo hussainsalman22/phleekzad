@@ -31,32 +31,37 @@ export function HeroCarousel() {
   }, [emblaApi]);
 
   return (
-    <section className="w-full max-w-6xl relative rounded-2xl overflow-hidden shadow-lg">
-      <div className="embla w-full h-[400px]" ref={emblaRef}>
-        <div className="embla__container flex h-[400px]">
+    <section className="w-full min-h-screen relative md:rounded-2xl overflow-hidden shadow-lg">
+      <div className="embla w-full h-screen" ref={emblaRef}>
+        <div className="embla__container flex h-screen">
           {carouselImages.map((src, index) => (
             <div
-              className="embla__slide relative flex-[0_0_100%] h-full"
+              className="embla__slide relative flex-[0_0_100%] h-screen"
               key={index}
             >
               <Image
                 src={src}
                 alt={`Ad ${index + 1}`}
                 fill
-                className=" brightness-50 object-cover z-0"
+                className="brightness-50 object-cover z-0"
               />
               <div className="absolute inset-0 bg-opacity-50 flex flex-col items-center justify-center text-center z-10 p-6 space-y-4">
-                <h1 className="text-4xl font-bold text-white">Promote Your Brand on Phleekz</h1>
-                <p className="text-lg text-gray-200">Reach a vibrant community ready to engage with your content.</p>
+                <h1 className="text-4xl font-bold text-white">
+                  Promote Your Brand on Phleekz
+                </h1>
+                <p className="text-lg text-gray-200">
+                  Reach a vibrant community ready to engage with your content.
+                </p>
                 <Button
-                size="lg"
-                className="rounded-full bg-black text-white px-8 py-3 
-                 hover:bg-white hover:text-black transition-colors duration-200"><Link href="#advertisingform">Submit Your Ad</Link></Button>
+                  size="lg"
+                  className="rounded-full bg-black text-white px-8 py-3 hover:bg-white hover:text-black transition-colors duration-200"
+                >
+                  <Link href="#advertisingform">Submit Your Ad</Link>
+                </Button>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  );
-}
+  )}

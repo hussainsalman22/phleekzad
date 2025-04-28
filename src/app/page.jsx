@@ -44,7 +44,7 @@ const benefits = [
   
 export default function AdvertisingPage() {
   return (
-    <div className="flex flex-col items-center w-full p-6 space-y-16">
+    <div className="flex flex-col items-center w-full md:p-6 md:space-y-8">
     <header className="w-full flex justify-center p-2">
       <ClientNavbar/>
     </header>
@@ -420,7 +420,7 @@ export default function AdvertisingPage() {
 
 
       {/* FAQ Section */}
-      <section className="max-w-3xl w-full mx-auto text-center">
+      <section className="max-w-3xl w-full px-4 md:px-0 mx-auto text-center">
   <div className="flex items-center justify-center gap-2 mb-6">
     <CircleHelp className="" size={28} />
     <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Frequently Asked Questions</h2>

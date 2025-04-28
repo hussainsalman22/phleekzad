@@ -29,7 +29,7 @@ export function MobileAdsShowcase() {
       </motion.h2>
 
       <Tabs defaultValue="play" className="w-full max-w-5xl">
-        <TabsList className="bg-black p-1 rounded-full shadow-md flex justify-center mb-8">
+        <TabsList className="bg-black p-1 rounded-full shadow-md flex justify-between  items-center mb-8">
           <TabsTrigger value="play" className="px-6 py-2 font-semibold text-white hover:bg-gray-700 data-[state=active]:bg-white 
       data-[state=active]:text-black">Play Ads</TabsTrigger>
           <TabsTrigger value="status" className="px-6 py-2 font-semibold text-white hover:bg-gray-700 data-[state=active]:bg-white 
@@ -42,7 +42,7 @@ export function MobileAdsShowcase() {
         <TabsContent value="play">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="text-center md:text-left space-y-4">
-              <h3 className="text-6xl font-extrabold">Tell Your story</h3>
+              <h3 className="text-2xl md:text-6xl font-extrabold">Tell Your story</h3>
               <h2 className="text-4xl font-bold">With Phleekz video ads</h2>
               <p className="text-white max-w-md">
                 Your ad takes over the entire screen in an immersive, TikTok-style reel format — perfect for grabbing instant attention!
